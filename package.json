@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "^15.0.0"
+    "slugify": "^1.6.6",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "eslint": "^8",

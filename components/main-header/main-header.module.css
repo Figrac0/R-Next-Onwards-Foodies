@@ -20,24 +20,57 @@
     /* font-family: 'Montserrat', sans-serif; */
     font-size: 1.25rem;
 }
-
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.4rem;
     text-decoration: none;
-    color: #ddd6cb;
-    font-weight: bold;
+    color: #ece7df;
+    font-weight: 800;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.18rem;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    transition: transform 0.2s ease-out, text-shadow 0.2s ease-out,
+        color 0.2s ease-out;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+    color: #ffd992;
+    text-shadow: 0 0 12px rgba(255, 166, 90, 0.7),
+        0 0 24px rgba(255, 98, 158, 0.45);
 }
 
 .logo img {
     width: 5rem;
     height: 5rem;
     object-fit: contain;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 0.9rem rgba(0, 0, 0, 0.55));
+    transition: transform 0.25s ease-out, filter 0.25s ease-out;
+}
+
+.logo:hover img {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 1.3rem rgba(255, 163, 71, 0.7));
+}
+
+/* Адаптация под маленькие экраны */
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.3rem;
+        letter-spacing: 0.12rem;
+    }
+
+    .logo img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .nav ul {
+        gap: 1.2rem;
+        font-size: 1.1rem;
+    }
 }

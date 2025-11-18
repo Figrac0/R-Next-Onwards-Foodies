@@ -15,14 +15,14 @@ function MainHeaderBackground() {
                             <stop
                                 offset="0%"
                                 style={{
-                                    stopColor: "#59453c",
+                                    stopColor: "#c78262ff",
                                     stopOpacity: "1",
                                 }}
                             />
                             <stop
                                 offset="100%"
                                 style={{
-                                    stopColor: "#8f3a09",
+                                    stopColor: "#8b4217ff",
                                     stopOpacity: "1",
                                 }}
                             />

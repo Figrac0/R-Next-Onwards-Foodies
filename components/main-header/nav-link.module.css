@@ -1,23 +1,66 @@
 .link {
     text-decoration: none;
-    color: #ddd6cb;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    color: #e9e4dd;
+    font-weight: 700;
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.04em;
+    transition: color 0.22s ease-out, text-shadow 0.22s ease-out,
+        transform 0.18s ease-out, background 0.22s ease-out;
+    display: inline-block;
+    position: relative;
 }
 
-.link a:hover,
-.link a:active {
-    background: linear-gradient(90deg, #ff8a05, #f9b331);
+/* Ховер и актив */
+
+.link:hover,
+.link:active {
+    color: transparent;
+    background: linear-gradient(120deg, #ff8a05, #ffd36b, #ff5ea8);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+
+    text-shadow: 0 0 18px rgba(255, 174, 62, 0.8),
+        0 0 32px rgba(255, 214, 133, 0.45);
+
+    transform: translateY(-2px);
 }
+
+/* Активная страница */
 
 .active {
-    background: linear-gradient(90deg, #ff8a05, #f9b331);
+    background: linear-gradient(120deg, #ff8a05, #ffd36b, #ff5ea8);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    font-weight: 800;
+    text-shadow: 0 0 14px rgba(255, 180, 85, 0.55),
+        0 0 26px rgba(255, 98, 158, 0.45);
+    transform: translateY(-1px);
+}
+
+/* Дополнительный эффект подсветки снизу */
+
+.link::after,
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 100%;
+    height: 2px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 0 50%, #ffb15d, transparent 70%);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
+
+.link:hover::after,
+.active::after {
+    opacity: 0.9;
+    transform: scaleX(1);
 }

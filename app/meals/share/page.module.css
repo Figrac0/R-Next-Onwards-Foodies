@@ -3,16 +3,28 @@
     margin: 3rem auto 5rem auto;
     width: 90%;
     max-width: 75rem;
-    color: #ddd6cb;
+    color: #f3eee7;
     font-size: 1.5rem;
+    line-height: 1.5;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
 }
 
 .header h1 {
     font-family: "Montserrat", sans-serif;
+    font-size: 2.6rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 0.75rem 0;
 }
 
 .highlight {
-    background: linear-gradient(90deg, #f9572a, #ff8a05);
+    background: linear-gradient(
+        120deg,
+        #ff7a3c 0%,
+        #ffc947 25%,
+        #ff5ea8 55%,
+        #7b7dff 85%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,41 +34,72 @@
     width: 90%;
     max-width: 75rem;
     margin: 3rem auto;
-    color: white;
+    color: #f8f4ee;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
+
+/* Форма */
 
 .form {
     max-width: 50rem;
+    padding: 2.25rem 2.5rem;
+    border-radius: 1.25rem;
+    background: radial-gradient(circle at 0 0, #31384a 0, #181c24 55%);
+    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
 }
 
 .form label {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    color: #b3aea5;
-    font-weight: bold;
+    letter-spacing: 0.14em;
+    color: #c7c2ba;
+    font-weight: 700;
 }
 
 .form input,
 .form textarea {
     display: block;
     width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    border: 1px solid #454952;
-    background: #1c2027;
-    font-size: 1.25rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #363b46;
+    background: linear-gradient(135deg, #171b22, #1d222b);
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
-    color: #ddd6cb;
+    color: #f1ece4;
+    outline: none;
+    transition: border-color 0.16s ease-out, box-shadow 0.16s ease-out,
+        background 0.16s ease-out, transform 0.08s ease-out;
+}
+
+.form textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #7d8088;
+    font-size: 0.95rem;
 }
 
 .form input:focus,
 .form textarea:focus {
-    outline-color: #f99f2a;
-    background-color: #1f252d;
+    border-color: #f99f2a;
+    background: linear-gradient(135deg, #1b212b, #222935);
+    box-shadow: 0 0 0 1px rgba(249, 159, 42, 0.4),
+        0 14px 30px rgba(0, 0, 0, 0.65);
+    transform: translateY(-1px);
 }
+
+/* Ряды формы */
 
 .row {
     display: flex;
@@ -67,32 +110,87 @@
     width: 100%;
 }
 
+/* Действия */
+
 .actions {
     text-align: right;
+    margin-top: 2rem;
 }
 
 .actions button {
     border: 0;
-    padding: 0.75rem 2rem;
-    background: linear-gradient(90deg, #f9572a, #ff9b05);
-    border: none;
+    padding: 0.85rem 2.2rem;
+    background: linear-gradient(120deg, #f9572a, #ffb905);
     color: #ffffff;
-    border-radius: 2px;
+    border-radius: 999px;
     cursor: pointer;
     font: inherit;
-    font-size: 1.25rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    box-shadow: 0 14px 32px rgba(249, 87, 42, 0.6), 0 0 0 1px rgba(0, 0, 0, 0.4);
+    transition: transform 0.16s ease-out, box-shadow 0.16s ease-out,
+        background-position 0.25s ease-out, filter 0.16s ease-out;
+    background-size: 180% 180%;
+    background-position: 0% 50%;
 }
 
 .actions button:hover,
 .actions button:focus {
-    background: linear-gradient(90deg, #fd4715, #f9b241);
+    background-position: 100% 50%;
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(249, 87, 42, 0.75),
+        0 0 0 1px rgba(0, 0, 0, 0.55);
+}
+
+.actions button:active {
+    transform: translateY(0);
+    box-shadow: 0 10px 22px rgba(249, 87, 42, 0.6),
+        0 0 0 1px rgba(0, 0, 0, 0.55);
 }
 
 .actions button:disabled,
 .actions button:hover:disabled,
 .actions button:focus:disabled {
-    background: #ccc;
-    color: #979797;
+    background: linear-gradient(120deg, #43464e, #3a3c43);
+    color: #a0a3aa;
     cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Адаптация под мобильные */
+
+@media (max-width: 720px) {
+    .header {
+        font-size: 1.2rem;
+        margin: 2.5rem auto 3rem auto;
+    }
+
+    .header h1 {
+        font-size: 2.1rem;
+        letter-spacing: 0.04em;
+    }
+
+    .main {
+        margin-top: 2rem;
+    }
+
+    .form {
+        padding: 1.6rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .actions {
+        text-align: center;
+    }
+
+    .actions button {
+        width: 100%;
+    }
 }

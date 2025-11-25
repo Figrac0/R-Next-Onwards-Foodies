@@ -6,9 +6,9 @@ The goal is not to create a production app, but to make each advanced feature ea
 This project showcases **React Server Components**, **client components**, **Suspense with promises**, **the use() hook**, **Server Actions**, custom **error boundaries**, and a lightweight file-based data layer that simulates a database.
 
 ---
-
+<div align="center">
 ## 📸 Project Preview
-
+</div>
 <h3 align="center">Screenshots</h3>
 
 <p align="center">
@@ -22,9 +22,9 @@ This project showcases **React Server Components**, **client components**, **Sus
 </p>
 
 ---
-
+<div align="center">
 ## 🧠 Key Concepts Demonstrated
-
+</div>
 - **React Server Components (RSC)** rendered entirely on the server  
 - **Client components with hooks** (`useState`, handlers, re-renders)  
 - **Suspense** boundaries with promises  
@@ -36,9 +36,9 @@ This project showcases **React Server Components**, **client components**, **Sus
 - **Global styling** using gradients, CSS variables, neon glows, blur (glassmorphism), and animated backgrounds
 
 ---
-
+<div align="center">
 ## 🧰 Tech Stack
-
+</div>
 - **Next.js 15** with the App Router  
 - **React 19**  
 - **Server Actions** (`"use server"`)  
@@ -48,9 +48,9 @@ This project showcases **React Server Components**, **client components**, **Sus
 - **globals.css** with animated, layered visual effects  
 
 ---
-
+<div align="center">
 ## 🏛 High-Level Architecture
-
+</div>
 The project follows the App Router structure:
 
 - **RootLayout**  
@@ -76,9 +76,9 @@ The project follows the App Router structure:
 Each subcomponent demonstrates one specific modern React pattern.
 
 ---
-
+<div align="center">
 ## 🧩 Features by Component
-
+</div>
 ### **RootLayout**
 - Defines `<html>` and `<body>` wrappers  
 - Registers metadata for the entire app  
@@ -176,9 +176,9 @@ New pattern replacing old API/REST endpoints for simple mutations.
   - Failure (ErrorBoundary fallback UI)  
 
 ---
-
+<div align="center">
 ## 🎨 Styling & UI Design
-
+</div>
 The `globals.css` file is a full visual playground:
 
 ### **Theme & Background**
@@ -217,9 +217,9 @@ The `globals.css` file is a full visual playground:
 This styling layer showcases how to build a full, striking UI without any UI library.
 
 ---
-
+<div align="center">
 ## 🗂 Data Layer
-
+</div>
 There is **no real database**. Instead:
 
 - `dummy-db.json` acts as the data source  
@@ -229,9 +229,9 @@ There is **no real database**. Instead:
 Both `DataFetchingDemo` and `UsePromiseDemo` rely on this approach to demonstrate realistic server-side patterns without external dependencies.
 
 ---
-
+<div align="center">
 ## 🔗 How Everything Fits Together
-
+</div>
 - **RootLayout** sets up global environment  
 - **Home** orchestrates:
   - Promise creation  
@@ -248,9 +248,9 @@ Both `DataFetchingDemo` and `UsePromiseDemo` rely on this approach to demonstrat
 - **ErrorBoundary** ensures async code doesn’t break the UI  
 
 ---
-
+<div align="center">
 ## 🎯 Summary
-
+</div>
 This repository is a compact, hands-on reference for experimenting with the newest React & Next.js concepts, including:
 
 - React Server Components  

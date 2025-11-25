@@ -22,30 +22,44 @@ This project showcases **React Server Components**, **client components**, **Sus
 </p>
 
 ---
-<h2 align="center">
- 🧠 Key Concepts Demonstrated
-</h2>
-- **React Server Components (RSC)** rendered entirely on the server  
-- **Client components with hooks** (`useState`, handlers, re-renders)  
-- **Suspense** boundaries with promises  
-- The new **React `use()` hook**, consuming a server-generated promise on the client  
-- **Server Actions** executed directly from forms  
-- **File-based data layer** simulating a database (`fs/promises` + JSON file)  
-- **Error boundaries** wrapping asynchronous operations  
-- **Composition** of server and client components in any direction  
-- **Global styling** using gradients, CSS variables, neon glows, blur (glassmorphism), and animated backgrounds
+<h2 align="center">🧠 Key Concepts Demonstrated</h2>
 
----
-<h2 align="center">
- 🧰 Tech Stack
-</h2>
-- **Next.js 15** with the App Router  
-- **React 19**  
-- **Server Actions** (`"use server"`)  
-- **Suspense + use()**  
-- **Node fs/promises** for file I/O  
-- **Custom error boundary** (class component)  
-- **globals.css** with animated, layered visual effects  
+<div align="center">
+
+</div>
+
+<br/>
+
+<ul>
+  <li><strong>React Server Components (RSC)</strong> rendered entirely on the server</li>
+  <li><strong>Client components with hooks</strong> (<code>useState</code>, handlers, re-renders)</li>
+  <li><strong>Suspense</strong> boundaries with promises</li>
+  <li>The new <strong>React <code>use()</code> hook</strong>, consuming a server-generated promise on the client</li>
+  <li><strong>Server Actions</strong> executed directly from forms</li>
+  <li><strong>File-based data layer</strong> simulating a database (<code>fs/promises</code> + JSON file)</li>
+  <li><strong>Error boundaries</strong> wrapping asynchronous operations</li>
+  <li><strong>Composition</strong> of server and client components in any direction</li>
+  <li><strong>Global styling</strong> using gradients, CSS variables, neon glows, blur, glassmorphism and animated backgrounds</li>
+</ul>
+
+<hr/>
+
+<h2 align="center">🧰 Tech Stack</h2>
+
+<br/>
+
+<ul>
+  <li><strong>Next.js 15</strong> with the App Router</li>
+  <li><strong>React 19</strong></li>
+  <li><strong>Server Actions</strong> (<code>"use server"</code>)</li>
+  <li><strong>Suspense + use()</strong></li>
+  <li><strong>Node fs/promises</strong> for file I/O</li>
+  <li><strong>Custom error boundary</strong> (class component)</li>
+  <li><strong>globals.css</strong> with animated, layered visual effects</li>
+</ul>
+
+<hr/>
+
 
 ---
 <h2 align="center">

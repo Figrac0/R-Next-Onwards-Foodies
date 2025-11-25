@@ -13,8 +13,6 @@ This repository focuses on three core ideas:
 
 ## Project Preview
 
-Below are the screenshots from the `/screenshots` folder:
-
 <h3 align="center">Screenshots</h3>
 
 <p align="center">

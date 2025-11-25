@@ -1,14 +1,14 @@
 # React RSC, Server Actions & More
 
 A focused playground project demonstrating how to combine modern **React 19** and **Next.js 15 App Router** features in one compact, educational example.  
-The goal is not to create a production app, but to make each advanced feature easy to inspect and understand — both individually and in combination.
+The goal is not to create a production app, but to make each advanced feature easy to inspect and understand — both inh2idually and in combination.
 
 This project showcases **React Server Components**, **client components**, **Suspense with promises**, **the use() hook**, **Server Actions**, custom **error boundaries**, and a lightweight file-based data layer that simulates a database.
 
 ---
-<div align="center">
-## 📸 Project Preview
-</div>
+<h2 align="center">
+📸 Project Preview
+</h2>
 <h3 align="center">Screenshots</h3>
 
 <p align="center">
@@ -22,9 +22,9 @@ This project showcases **React Server Components**, **client components**, **Sus
 </p>
 
 ---
-<div align="center">
-## 🧠 Key Concepts Demonstrated
-</div>
+<h2 align="center">
+ 🧠 Key Concepts Demonstrated
+</h2>
 - **React Server Components (RSC)** rendered entirely on the server  
 - **Client components with hooks** (`useState`, handlers, re-renders)  
 - **Suspense** boundaries with promises  
@@ -36,9 +36,9 @@ This project showcases **React Server Components**, **client components**, **Sus
 - **Global styling** using gradients, CSS variables, neon glows, blur (glassmorphism), and animated backgrounds
 
 ---
-<div align="center">
-## 🧰 Tech Stack
-</div>
+<h2 align="center">
+ 🧰 Tech Stack
+</h2>
 - **Next.js 15** with the App Router  
 - **React 19**  
 - **Server Actions** (`"use server"`)  
@@ -48,9 +48,9 @@ This project showcases **React Server Components**, **client components**, **Sus
 - **globals.css** with animated, layered visual effects  
 
 ---
-<div align="center">
-## 🏛 High-Level Architecture
-</div>
+<h2 align="center">
+ 🏛 High-Level Architecture
+</h2>
 The project follows the App Router structure:
 
 - **RootLayout**  
@@ -76,10 +76,10 @@ The project follows the App Router structure:
 Each subcomponent demonstrates one specific modern React pattern.
 
 ---
-<div align="center">
-## 🧩 Features by Component
-</div>
-### **RootLayout**
+<h2 align="center">
+ 🧩 Features by Component
+</h2>
+# **RootLayout**
 - Defines `<html>` and `<body>` wrappers  
 - Registers metadata for the entire app  
 - Injects global styling  
@@ -87,7 +87,7 @@ Each subcomponent demonstrates one specific modern React pattern.
 
 ---
 
-### **Home (Server Component)**
+# **Home (Server Component)**
 - Central coordinator of demos  
 - Creates a delayed promise (via `setTimeout`)  
 - Reads `dummy-db.json` to simulate a DB  
@@ -106,7 +106,7 @@ Also renders independent demos:
 
 ---
 
-### **RSCDemo (React Server Component)**
+# **RSCDemo (React Server Component)**
 - Runs *only* on the server  
 - Never executes in the browser  
 - Logs rendering on the server console  
@@ -116,7 +116,7 @@ Also renders independent demos:
 
 ---
 
-### **DataFetchingDemo**
+# **DataFetchingDemo**
 - Async **server component**  
 - Reads JSON directly from the filesystem  
 - Renders a user list on the server  
@@ -125,7 +125,7 @@ Also renders independent demos:
 
 ---
 
-### **UsePromiseDemo (Client Component)**
+# **UsePromiseDemo (Client Component)**
 - Marked with `"use client"`  
 - Receives a **server-created promise** via props  
 - Uses **React `use()`** to:
@@ -142,7 +142,7 @@ This component demonstrates:
 
 ---
 
-### **ClientDemo (Client Component)**
+# **ClientDemo (Client Component)**
 - Standard React client component  
 - Uses `useState`  
 - Logs each render  
@@ -151,7 +151,7 @@ This component demonstrates:
 
 ---
 
-### **ServerActionsDemo**
+# **ServerActionsDemo**
 - Server component containing a form  
 - Form submits directly to a **Server Action**  
 - No REST, no API route required  
@@ -165,7 +165,7 @@ New pattern replacing old API/REST endpoints for simple mutations.
 
 ---
 
-### **ErrorBoundary (Client Component)**
+# **ErrorBoundary (Client Component)**
 - Classic React class-based error boundary  
 - Catches async + render-time errors  
 - Provides fallback UI  
@@ -176,50 +176,50 @@ New pattern replacing old API/REST endpoints for simple mutations.
   - Failure (ErrorBoundary fallback UI)  
 
 ---
-<div align="center">
-## 🎨 Styling & UI Design
-</div>
+<h2 align="center">
+ 🎨 Styling & UI Design
+</h2>
 The `globals.css` file is a full visual playground:
 
-### **Theme & Background**
+# **Theme & Background**
 - Dark theme with CSS variables  
 - Multi-layer radial gradients  
 - Procedural noise texture via data URI  
 - Animated background elements  
 - Slow orbiting glow effects via keyframes
 
-### **Glassmorphism Cards**
+# **Glassmorphism Cards**
 - Semi-transparent surfaces  
 - Heavy blur via `backdrop-filter`  
 - Subtle grid overlays  
 - Neon glows via gradient pseudo-elements
 
-### **Per-Component Color Identity**
+# **Per-Component Color Identity**
 - RSC components: cyan/blue neon  
 - Client components: magenta/orange  
 - Errors: warm red/orange gradients  
 
-### **Interactions**
+# **Interactions**
 - Hover scale + lift  
 - Neon shadows  
 - Animated gradient buttons  
 - Glowing input fields  
 
-### **Responsive**
+# **Responsive**
 - Reduced spacing on small screens  
 - Adaptive typography  
 - Stable layout without shifting  
 
-### **Accessibility**
+# **Accessibility**
 - Respects `prefers-reduced-motion`  
 - High contrast for readability  
 
 This styling layer showcases how to build a full, striking UI without any UI library.
 
 ---
-<div align="center">
-## 🗂 Data Layer
-</div>
+<h2 align="center">
+ 🗂 Data Layer
+</h2>
 There is **no real database**. Instead:
 
 - `dummy-db.json` acts as the data source  
@@ -229,9 +229,9 @@ There is **no real database**. Instead:
 Both `DataFetchingDemo` and `UsePromiseDemo` rely on this approach to demonstrate realistic server-side patterns without external dependencies.
 
 ---
-<div align="center">
-## 🔗 How Everything Fits Together
-</div>
+<h2 align="center">
+ 🔗 How Everything Fits Together
+</h2>
 - **RootLayout** sets up global environment  
 - **Home** orchestrates:
   - Promise creation  
@@ -248,9 +248,9 @@ Both `DataFetchingDemo` and `UsePromiseDemo` rely on this approach to demonstrat
 - **ErrorBoundary** ensures async code doesn’t break the UI  
 
 ---
-<div align="center">
-## 🎯 Summary
-</div>
+<h2 align="center">
+ 🎯 Summary
+</h2>
 This repository is a compact, hands-on reference for experimenting with the newest React & Next.js concepts, including:
 
 - React Server Components  

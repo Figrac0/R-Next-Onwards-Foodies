@@ -25,7 +25,7 @@ This repository focuses on three core ideas:
 
 </div>
 
----
+
 
 ## Project Preview
 

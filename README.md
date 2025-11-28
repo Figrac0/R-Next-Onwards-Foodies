@@ -201,4 +201,4 @@ This project is a complete demonstration of:
 - React 19 client-side hooks  
 - Full-stack architecture without custom API routes  
 
-It serves as a practical template for small to medium production-ready Next.js applications.
+It serves as a practical template for small to medium production-ready Next.js applications. 

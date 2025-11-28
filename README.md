@@ -9,7 +9,7 @@ This repository focuses on three core ideas:
 - Full CRUD-style flow for recipes using Server Actions, Form Actions, React hooks, and route revalidation  
 - Local data persistence implemented via `better-sqlite3` (embedded SQLite database)
 
----
+--- 
 
 ## Project Preview
 

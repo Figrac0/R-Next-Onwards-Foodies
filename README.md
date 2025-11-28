@@ -50,9 +50,9 @@ This repository focuses on three core ideas:
 <p align="center">
   <img src="https://raw.githubusercontent.com/Figrac0/R-Next-Onwards-Foodies/main/screenshots/5.png" width="450"/><br/>
 </p>
-
-</div>
 ---
+</div>
+
 
 ## Project Overview
 
